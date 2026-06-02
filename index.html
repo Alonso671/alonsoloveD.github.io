@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para mi Princesa 🌸</title>
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8dce6;
+}
+
+/* MENU IZQUIERDO */
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:280px;
+    height:100vh;
+    background:#ff4f8b;
+    color:white;
+    box-shadow:5px 0 20px rgba(0,0,0,.15);
+}
+
+.logo{
+    text-align:center;
+    padding:70px 20px;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.sidebar a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    padding:28px;
+    text-align:center;
+    letter-spacing:2px;
+    border-top:1px solid rgba(255,255,255,.15);
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background:#ff77a8;
+}
+
+/* CONTENIDO */
+
+.content{
+    margin-left:280px;
+}
+
+.section{
+    min-height:100vh;
+    padding:70px;
+}
+
+.section h2{
+    color:#d81b60;
+    font-size:4rem;
+    margin-bottom:40px;
+}
+
+/* IMAGEN + TEXTO */
+
+.bloque-superior{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.foto-principal{
+    width:450px;
+    height:320px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.texto-lateral{
+    flex:1;
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    line-height:1.9;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.texto-lateral h3{
+    color:#d81b60;
+    margin-bottom:15px;
+}
+
+/* TEXTO ABAJO */
+
+.texto-abajo{
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    line-height:2;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+/* COLORES DE FONDO */
+
+#inicio{
+    background:#f8dce6;
+}
+
+#amo{
+    background:#ffd6e7;
+}
+
+#futuro{
+    background:#ffe4ef;
+}
+
+/* CELULARES */
+
+@media(max-width:900px){
+
+.sidebar{
+    position:relative;
+    width:100%;
+    height:auto;
+}
+
+.content{
+    margin-left:0;
+}
+
+.bloque-superior{
+    flex-direction:column;
+}
+
+.foto-principal{
+    width:100%;
+    height:auto;
+}
+
+.section{
+    padding:30px;
+}
+
+.section h2{
+    font-size:2.5rem;
+}
+
+}
+/* TE AMO GRANDES */
+
+.teamo{
+    position:absolute;
+    font-size:80px;
+    font-weight:bold;
+    color:#ff69b4;
+    opacity:.18;
+    letter-spacing:8px;
+    pointer-events:none;
+}
+
+.teamo1{
+    top:700px;
+    right:80px;
+}
+
+.teamo2{
+    top:1700px;
+    right:80px;
+}
+
+.teamo3{
+    top:2700px;
+    right:80px;
+}
+
+/* LLUVIA */
+
+.lluvia-corazones{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:9999;
+}
+
+.lluvia-corazones span{
+    position:absolute;
+    top:-100px;
+    font-size:28px;
+    color:red;
+    animation:caer linear infinite;
+}
+
+.lluvia-corazones span:nth-child(1){left:5%;animation-duration:9s;}
+.lluvia-corazones span:nth-child(2){left:15%;animation-duration:12s;}
+.lluvia-corazones span:nth-child(3){left:25%;animation-duration:10s;}
+.lluvia-corazones span:nth-child(4){left:35%;animation-duration:13s;}
+.lluvia-corazones span:nth-child(5){left:45%;animation-duration:15s;}
+.lluvia-corazones span:nth-child(6){left:60%;animation-duration:11s;}
+.lluvia-corazones span:nth-child(7){left:72%;animation-duration:14s;}
+.lluvia-corazones span:nth-child(8){left:84%;animation-duration:12s;}
+
+@keyframes caer{
+    0%{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+
+    15%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(120vh);
+        opacity:0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="teamo teamo1">TE AMO ❤️</div>
+<div class="teamo teamo2">TE AMO ❤️</div>
+<div class="teamo teamo3">TE AMO ❤️</div>
+
+<div class="lluvia-corazones">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>❤️</span>
+    <span>💗</span>
+    <span>❤️</span>
+    <span>💖</span>
+    <span>❤️</span>
+    <span>💗</span>
+</div>
+<div class="sidebar">
+
+<div class="logo">
+Para mi Princesa 🌸
+</div>
+
+<a href="#inicio">Nuestro Inicio</a>
+<a href="#amo">Lo que Amo de Ti</a>
+<a href="#futuro">Nuestro Futuro</a>
+
+</div>
+
+<div class="content">
+
+<!-- INICIO -->
+
+<section id="inicio" class="section">
+
+<h2>🌸 Nuestro Inicio</h2>
+
+<div class="bloque-superior">
+
+<img src="imagen1.jpg" class="foto-principal">
+
+<div class="texto-lateral">
+
+<h3>El comienzo de nuestra historia</h3>
+
+<p>
+Tengo guardado en la memoria el día que nos conocimos como si fuera una foto:
+tus bellos ojos, esa risa que me tomó por sorpresa y las conversaciones que se
+alargaban hasta el día siguiente sin que nos diéramos cuenta.
+
+No fue un golpe de suerte, fue más bien un encajar suave: con nuestras palabras
+fluyendo, las miradas cómplices y la sensación de querer saber más de ti al instante.
+
+A veces pienso en esas primeras salidas y me río de lo nervioso que estaba,
+pero ahora me parece el inicio perfecto de algo real.
+
+Gracias por darme la oportunidad de conocerte y por ese comienzo que ahora se
+volvió hogar.
+</p>
+
+</div>
+
+</div>
+
+<div class="texto-abajo">
+
+<p>
+Cada historia tiene un comienzo especial y la nuestra no fue la excepción.
+Con cada conversación compartida, cada sonrisa y cada recuerdo creado,
+fuimos construyendo algo que con el tiempo se volvió importante.
+
+A veces los mejores capítulos comienzan de forma sencilla,
+pero terminan convirtiéndose en los más significativos de nuestra vida.
+</p>
+
+</div>
+
+</section>
+
+<!-- LO QUE AMO DE TI -->
+
+<section id="amo" class="section">
+
+<h2>💕 Lo que Amo de Ti</h2>
+
+<div class="bloque-superior">
+
+<img src="imagen2.jpg" class="foto-principal">
+
+<div class="texto-lateral">
+
+<h3>Todo lo que te hace especial</h3>
+
+<p>
+Hoy me quedé pensando en esas pequeñas cosas tuyas que me hacen sonreír sin querer.
+
+Amo tus lindos ojos y amo tu sonrisa que aparece de repente y me deja sin palabras.
+Me encanta la forma en que nos miramos cuando no hay nada que decir.
+
+Y no sabes cuánto adoro cuando te ríes de mis bromas, esa hermosa risa que convierte
+hasta un día aburrido en algo nuestro.
+
+Guardo esos momentos en la cabeza como si fueran mis canciones favoritas,
+porque las repito una y otra vez y nunca me canso.
+</p>
+
+</div>
+
+</div>
+
+<div class="texto-abajo">
+
+<p>
+Lo que más destaca de ti no es solamente lo que se puede ver,
+sino también aquello que llevas dentro.
+
+Tu forma de tratar a las personas,
+tu manera de apoyar a quienes quieres
+y la energía positiva que transmites son cualidades
+que te hacen única.
+
+Son esas cosas las que dejan huella en quienes tienen la suerte de conocerte.
+</p>
+
+</div>
+
+</section>
+
+<!-- FUTURO -->
+
+<section id="futuro" class="section">
+
+<h2>✨ Nuestro Futuro</h2>
+
+<div class="bloque-superior">
+
+<img src="imagen3.jpg" class="foto-principal">
+
+<div class="texto-lateral">
+
+<h3>Lo mejor está por venir</h3>
+
+<p>
+Cuando imagino nuestro futuro no veo perfección, veo momentos reales:
+tardes haciendo compras juntos, noches de película con mantas y decisiones
+difíciles tomadas en equipo.
+
+Me imagino riéndonos de errores que hoy nos asustan y celebrando logros,
+tanto pequeños como grandes.
+
+Quiero que construyamos un espacio donde podamos ser honestos, cansados,
+felices o incluso enojados, sabiendo que siempre estaremos el uno para el otro.
+
+Te prometo escucharte, cuidarte y reír contigo incluso cuando la rutina pese.
+</p>
+
+</div>
+
+</div>
+
+<div class="texto-abajo">
+
+<p>
+Mirar hacia adelante significa pensar en nuevos sueños,
+nuevas metas y muchas experiencias por compartir.
+
+Lo importante no es saber exactamente qué ocurrirá mañana,
+sino tener la ilusión de seguir creando recuerdos,
+aprendiendo y creciendo juntos en el camino.
+
+Porque las mejores historias nunca terminan;
+simplemente siguen escribiéndose página tras página.
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+</body>
+</html>
